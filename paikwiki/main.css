@@ -55,6 +55,7 @@
 
 body {
 	font: sans-serif;
+	font-size: 10pt;
 	background: #fff;
 	margin: 0;
 	padding: 0;
@@ -1315,4 +1316,17 @@ div.mw-lag-warn-high {
 
 del { 
   color: #999;
+}
+
+/* 여기서부터는 paikwiki.com을 위한 설정입니다. 
+ * 다른 위키에서 이 스킨을 사용할 경우 지워도 되는 부분입니다.
+*/
+
+/* 대문에서 특정 요소를 숨김 */
+body.page-대문 #t-cite,
+body.page-대문 #lastmod,
+body.page-대문 #siteSub,
+body.page-대문 #contentSub,
+body.page-대문 h1.firstHeading {
+  display: none !important;
 }

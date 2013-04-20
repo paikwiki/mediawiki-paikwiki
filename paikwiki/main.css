@@ -901,21 +901,21 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 ** footer
 */
 #footer {
-	background-color: white;
-	/* border: 1px solid #ff0; */
-	border: 1px solid #e0e0e0;
-	width: 1024px;
-	margin: auto;
-	padding: 0;
+	width: 100%;
+	min-width: 1024px;
+	margin: 0;
+	padding: 4px 0 0 0;
+	height: 36px;
 	text-align: center;
 	font-size: 90%;
-	background: #e0e0e0;
+	background-color: #09C;
 }
 #footer li {
 	list-style: none;
 	margin: 0 1.3em;
+	color: #ccc;
 }
-#privacy, #about,  #disclaimer {
+#lastmod, #viewcount, #privacy, #about,  #disclaimer {
 	display: inline;
 }
 
@@ -932,6 +932,9 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 	height: 1%;
 }
 
+#footer a  {
+	color: #ccc;
+}
 .mw-htmlform-submit {
 	font-weight: bold;
 	padding-left: .3em;

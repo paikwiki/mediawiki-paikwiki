@@ -36,14 +36,12 @@ class SkinPaikwiki extends SkinTemplate {
 			// Currently in testing... try 'chick/main.css'
 			$out->addStyle( $wgHandheldStyle, 'handheld' );
 		}
-
 		$out->addStyle( 'paikwiki/IE50Fixes.css', 'screen', 'lt IE 5.5000' );
 		$out->addStyle( 'paikwiki/IE55Fixes.css', 'screen', 'IE 5.5000' );
 		$out->addStyle( 'paikwiki/IE60Fixes.css', 'screen', 'IE 6' );
 		$out->addStyle( 'paikwiki/IE70Fixes.css', 'screen', 'IE 7' );
 
 		$out->addStyle( 'paikwiki/rtl.css', 'screen', '', 'rtl' );
-
 	}
 }
 

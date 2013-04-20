@@ -25,7 +25,7 @@
 	background-color: #fafafa;
 }
 #content {
-	width: 988px;
+	width: 980px;
 	margin: auto;
 	margin-top: 80px;
 	padding: 16px;
@@ -39,7 +39,7 @@
 }
 
 #column-one {
-	width: 988px;
+	width: 980px;
 	margin: auto;
 	padding: 4px 16px;
 	top: 0;
@@ -80,6 +80,9 @@ a {
 	text-decoration: none;
 	color: #09C;
 	background: none;
+	white-space: normal;
+	word-break: break-alll;
+	word-wrap: break-word;
 }
 
 a:visited {
@@ -728,7 +731,6 @@ input.searchButton {
 */
 #p-personal {
 	width: 100%;
-	min-width: 1020px;
 	white-space: nowrap;
 	padding: 0;
 	margin: 0;
@@ -785,6 +787,7 @@ input.searchButton {
 }
 #p-personal li a:hover {
 	background-color: white;
+	color: #09C;
 	padding-bottom: .2em;
 	text-decoration: none;
 }
@@ -935,7 +938,6 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 */
 #footer {
 	width: 100%;
-	min-width: 1020px;
 	margin: 0;
 	padding: 4px 0 0 0;
 	height: 36px;
@@ -1359,9 +1361,38 @@ del {
   color: #999;
 }
 
-/* 여기서부터는 paikwiki.com을 위한 설정입니다. 
+/* =======================================
+ * 여기서부터는 모바일 디바이스를 위한 설정입니다. 
+======================================= */
+@media all and (max-device-width: 1023px) {
+	body { font-size:160%;}
+	#p-cactions {
+		position: fixed;
+		top: 44px;	
+		font-size: 80%;
+	}
+	#p-cactions li {
+		margin: 0 4px 0 0;
+	}
+	#p-search {
+		width: 330px;
+		top: 40px;
+		font-size: 60%;
+	}
+	#p-personal {
+		font-size: 80%;
+	}
+	#footer {
+		font-size: 80%;
+		padding-top: 2px;
+		height: 80px;
+	}	
+}
+
+/* =======================================
+ * 여기서부터는 paikwiki.com을 위한 설정입니다. 
  * 다른 위키에서 이 스킨을 사용할 경우 지워도 되는 부분입니다.
-*/
+======================================= */
 
 /* 대문에서 특정 요소를 숨김 */
 body.page-대문 #t-cite,

@@ -671,18 +671,19 @@ table.rimage {
 ** Search portlet
 */
 #p-search {
-	width: 100%;
+	width: 260px;
 	margin: 0;
 	padding: 4px 0 0 0;
 	position: fixed;
 	float: right;
 	top: 48px;
-	left: 0;
-	z-index: 4;
+	right: 0;
+	z-index: 5;
 }
 #p-search .pBody {
 	border: 0;
 	background: none;
+	z-index: 5;
 }
 input.searchButton {
 	margin-top: 1px;

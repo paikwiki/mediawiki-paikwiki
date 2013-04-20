@@ -22,6 +22,7 @@
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: #fafafa;
 }
 #content {
 	width: 988px;
@@ -33,6 +34,7 @@
 	/* border: 1px solid #ff0; */
 	border-right: 1px solid #e0e0e0;
 	border-left: 1px solid #e0e0e0;
+	background-color: #fff;
 	line-height: 1.5em;
 }
 
@@ -44,7 +46,11 @@
 	z-index: 1;
 	/* border: 1px solid #ff0; */
 	border: 1px solid #e0e0e0;
-	background: #e0e0e0;
+	background-color: #fafafa;
+}
+
+#column-one > div > h5 {
+	display: none;
 }
 
 /* the left column width is specified in class .portlet */
@@ -56,7 +62,7 @@
 body {
 	font: sans-serif;
 	font-size: 10pt;
-	background: #fff;
+	background-color: #fafafa;
 	margin: 0;
 	padding: 0;
 }
@@ -72,11 +78,12 @@ body {
 /* 링크 */
 a {
 	text-decoration: none;
-	color: #002bb8;
+	color: #09C;
 	background: none;
 }
+
 a:visited {
-	color: #5a3696;
+	color: #09C;
 }
 a:active {
 	color: #faa700;
@@ -87,11 +94,15 @@ a:hover {
 a.stub {
 	color: #772233;
 }
+
+#bodyContent a.new {
+	color: #aaa;
+}
 a.new, #p-personal a.new {
 	color: #aaa;
 }
 a.new:visited, #p-personal a.new:visited {
-	color: #fff;
+	color: #aaa;
 }
 
 /* img, p, hr 태그 */
@@ -128,11 +139,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .editsection { display: inline; }
 
-h1 { font-size: 132%; }
+h1 { font-size: 132%;  color: #036;}
 h1 .editsection { font-size: 53%; }
-h2 { font-size: 124%; }
+h2 { font-size: 124%; color: #036;}
 h2 .editsection { font-size: 67%; }
 h3, h4, h5, h6 {
+	color: #036;
 	border-bottom: none;
 	font-weight: bold;
 }
@@ -566,10 +578,10 @@ table.rimage {
 /* disable interwiki styling */
 #bodyContent a.extiw,
 #bodyContent a.extiw:active {
-	color: #36b;
+	color: #994c00;
 }
 #bodyContent a.external {
-	color: #36b;
+	color: #994c00;
 }
 /*
 ** Structural Elements
@@ -826,7 +838,7 @@ li#pt-login {
 	display: inline;
 	border-bottom: none;
 	margin: 0 20px 0 0;
-
+	padding: 0.8em .3em;
 	border: none;
 	background-color: none;
 
@@ -835,12 +847,11 @@ li#pt-login {
 
 #p-cactions li.selected {
 	border-color: #fabd23;
-	padding: 0 0 .2em 0;
-	font-weight: bold;
+	padding: 0.8em .3em;
 }
 #p-cactions li a {
 	margin: 0;
-	padding: 0 .8em .3em;
+	padding: 0.8em .3em;
 	position: relative;
 
 	z-index: 0;
@@ -851,7 +862,7 @@ li#pt-login {
 }
 #p-cactions li.selected a {
 	z-index: 3;
-	padding: 0 1em .2em!important;
+	padding: 0.8em .3em;
 	background-color: none;
 	color: #ff0;
 }
@@ -861,6 +872,7 @@ li#pt-login {
 #p-cactions li a:hover {
 	z-index: 3;
 	text-decoration: none;
+	color: #09C;
 	background-color: white;
 }
 #p-cactions h5 {

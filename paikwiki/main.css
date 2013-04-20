@@ -29,7 +29,7 @@
 	margin-top: 80px;
 	padding: 16px;
 	position:relative;
-	z-index: 2;
+	z-index: 0;
 	/* border: 1px solid #ff0; */
 	border-right: 1px solid #e0e0e0;
 	border-left: 1px solid #e0e0e0;
@@ -41,6 +41,7 @@
 	margin: auto;
 	padding: 16px;
 	top: 0;
+	z-index: 1;
 	/* border: 1px solid #ff0; */
 	border: 1px solid #e0e0e0;
 	background: #e0e0e0;
@@ -647,7 +648,7 @@ table.rimage {
 	top: 0;
 	left: 0;
 	position:fixed;
-	z-index: 6;
+	z-index: 4;
 	height: 80px;
 	width: 152px;
 	overflow: visible;
@@ -708,7 +709,7 @@ input.searchButton {
 	position:fixed;
 	top: 0;
 	left: 0;
-	z-index: 5;
+	z-index: 4;
 	height: 80px;
 	border: none;
 	background: #09C;
@@ -784,11 +785,11 @@ li#pt-login {
 */
 #p-cactions {
 	margin: 0 0 0 -16px;
-	padding: 50px 0 0 0;
+	padding: 0;
 
 	position: fixed;
-	top: 0px;	
-	z-index: 6;
+	top: 52px;	
+	z-index: 5;
 
 	white-space: nowrap;
 	overflow: visible;

@@ -39,7 +39,7 @@
 #column-one {
 	width: 992px;
 	margin: auto;
-	margin-top: 24px;
+	margin-top: 80px;
 	padding: 16px;
 	top: 0;
 	/* border: 1px solid #ff0; */
@@ -88,10 +88,10 @@ a.stub {
 	color: #772233;
 }
 a.new, #p-personal a.new {
-	color: #ba0000;
+	color: #aaa;
 }
 a.new:visited, #p-personal a.new:visited {
-	color: #a55858;
+	color: #fff;
 }
 
 /* img, p, hr 태그 */
@@ -642,15 +642,15 @@ table.rimage {
 
 /*
 ** Logo properties
-
+*/
 
 #p-logo {
 	top: 0;
 	left: 0;
 	position: absolute; 
-	z-index: 3;
-	height: 155px;
-	width: 12em;
+	z-index: 0;
+	height: 80px;
+	width: 152px;
 	overflow: visible;
 }
 #p-logo h5 {
@@ -659,13 +659,13 @@ table.rimage {
 #p-logo a,
 #p-logo a:hover {
 	display: block;
-	height: 155px;
-	width: 12.2em;
+	height: 80px;
+	width: 152px;
 	background-repeat: no-repeat;
 	background-position: 35% 50% !important;
 	text-decoration: none;
 }
-*/
+
 
 /*
 ** Search portlet
@@ -706,12 +706,17 @@ input.searchButton {
 	z-index: 0;
 }
 #p-personal {
-	width: 992px;
+	width: 100%;
+	min-width: 1024px;
 	white-space: nowrap;
 	padding: 0;
 	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80px;
 	border: none;
-	background: none;
+	background: #09C;
 	overflow: visible;
 	line-height: 1.2em;
 }
@@ -721,7 +726,7 @@ input.searchButton {
 #p-personal .portlet,
 #p-personal .pBody {
 	z-index: 0;
-	padding: 0;
+	padding: 56px 8px 0 0;
 	margin: 0;
 	border: none;
 	overflow: visible;
@@ -752,7 +757,7 @@ input.searchButton {
 }
 #p-personal li a {
 	text-decoration: none;
-	color: #005896;
+	color: #eee;
 	padding-bottom: .2em;
 	background: none;
 }

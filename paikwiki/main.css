@@ -671,8 +671,18 @@ table.rimage {
 ** Search portlet
 */
 #p-search {
-	position: relative;
-	z-index: 3;
+	width: 100%;
+	margin: 0;
+	padding: 4px 0 0 0;
+	position: fixed;
+	float: right;
+	top: 48px;
+	left: 0;
+	z-index: 5;
+}
+#p-search .pBody {
+	border: 0;
+	background: none;
 }
 input.searchButton {
 	margin-top: 1px;
@@ -689,14 +699,17 @@ input.searchButton {
 	font-size: 95%;
 }
 #p-search .pBody {
-	padding: .5em .4em .4em .4em;
-	text-align: center;
+	padding: 0;
+	text-align: right;
 }
 #p-search #searchform div div {
 	margin-top: .4em;
 	font-size: 95%;
 }
 
+#p-search h5 {
+	display: none;
+}
 /*
 ** the personal toolbar
 */
@@ -722,7 +735,7 @@ input.searchButton {
 #p-personal .portlet,
 #p-personal .pBody {
 	z-index: 0;
-	padding: 56px 8px 0 0;
+	padding: 8px 8px 0 0;
 	margin: 0;
 	border: none;
 	overflow: visible;

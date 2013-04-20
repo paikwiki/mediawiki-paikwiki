@@ -24,7 +24,7 @@
 	padding: 0;
 }
 #content {
-	width: 992px;
+	width: 988px;
 	margin: auto;
 	margin-top: 80px;
 	padding: 16px;
@@ -37,9 +37,9 @@
 }
 
 #column-one {
-	width: 992px;
+	width: 988px;
 	margin: auto;
-	padding: 16px;
+	padding: 4px 16px;
 	top: 0;
 	z-index: 1;
 	/* border: 1px solid #ff0; */
@@ -678,7 +678,7 @@ table.rimage {
 	float: right;
 	top: 48px;
 	left: 0;
-	z-index: 5;
+	z-index: 4;
 }
 #p-search .pBody {
 	border: 0;
@@ -715,7 +715,7 @@ input.searchButton {
 */
 #p-personal {
 	width: 100%;
-	min-width: 1024px;
+	min-width: 1020px;
 	white-space: nowrap;
 	padding: 0;
 	margin: 0;
@@ -922,7 +922,7 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 */
 #footer {
 	width: 100%;
-	min-width: 1024px;
+	min-width: 1020px;
 	margin: 0;
 	padding: 4px 0 0 0;
 	height: 36px;

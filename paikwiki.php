@@ -9,7 +9,7 @@
  *
  * author : chPaik(ch_Paik@twitter)
  * e-mail : paikwiki@gmail.com
- * date : 2013..04.20(ver0.2)
+ * date : 2013..04.21(ver0.3)
  */
 
 if( !defined( 'MEDIAWIKI' ) )

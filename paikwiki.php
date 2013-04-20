@@ -72,6 +72,29 @@ class PaikwikiTemplate extends QuickTemplate {
 
 		$this->html( 'headelement' );
 ?><div id="globalWrapper">
+<div id="column-content"><div id="content" <?php $this->html("specialpageattributes") ?>>
+	<a id="top"></a>
+	<?php if($this->data['sitenotice']) { ?><div id="siteNotice"><?php $this->html('sitenotice') ?></div><?php } ?>
+
+	<h1 id="firstHeading" class="firstHeading"><?php $this->html('title') ?></h1>
+	<div id="bodyContent">
+		<h3 id="siteSub"><?php $this->msg('tagline') ?></h3>
+		<div id="contentSub"<?php $this->html('userlangattributes') ?>><?php $this->html('subtitle') ?></div>
+<?php if($this->data['undelete']) { ?>
+		<div id="contentSub2"><?php $this->html('undelete') ?></div>
+<?php } ?><?php if($this->data['newtalk'] ) { ?>
+		<div class="usermessage"><?php $this->html('newtalk')  ?></div>
+<?php } ?><?php if($this->data['showjumplinks']) { ?>
+		<div id="jump-to-nav"><?php $this->msg('jumpto') ?> <a href="#column-one"><?php $this->msg('jumptonavigation') ?></a>, <a href="#searchInput"><?php $this->msg('jumptosearch') ?></a></div>
+<?php } ?>
+		<!-- start content -->
+<?php $this->html('bodytext') ?>
+		<?php if($this->data['catlinks']) { $this->html('catlinks'); } ?>
+		<!-- end content -->
+		<?php if($this->data['dataAfterContent']) { $this->html ('dataAfterContent'); } ?>
+		<div class="visualClear"></div>
+	</div>
+</div></div>
 <div id="column-one"<?php $this->html('userlangattributes')  ?>>
 	<div id="p-cactions" class="portlet">
 		<h5><?php $this->msg('views') ?></h5>
@@ -141,29 +164,6 @@ class PaikwikiTemplate extends QuickTemplate {
 		}
 ?>
 </div><!-- end of the left (by default at least) column -->
-<div id="column-content"><div id="content" <?php $this->html("specialpageattributes") ?>>
-	<a id="top"></a>
-	<?php if($this->data['sitenotice']) { ?><div id="siteNotice"><?php $this->html('sitenotice') ?></div><?php } ?>
-
-	<h1 id="firstHeading" class="firstHeading"><?php $this->html('title') ?></h1>
-	<div id="bodyContent">
-		<h3 id="siteSub"><?php $this->msg('tagline') ?></h3>
-		<div id="contentSub"<?php $this->html('userlangattributes') ?>><?php $this->html('subtitle') ?></div>
-<?php if($this->data['undelete']) { ?>
-		<div id="contentSub2"><?php $this->html('undelete') ?></div>
-<?php } ?><?php if($this->data['newtalk'] ) { ?>
-		<div class="usermessage"><?php $this->html('newtalk')  ?></div>
-<?php } ?><?php if($this->data['showjumplinks']) { ?>
-		<div id="jump-to-nav"><?php $this->msg('jumpto') ?> <a href="#column-one"><?php $this->msg('jumptonavigation') ?></a>, <a href="#searchInput"><?php $this->msg('jumptosearch') ?></a></div>
-<?php } ?>
-		<!-- start content -->
-<?php $this->html('bodytext') ?>
-		<?php if($this->data['catlinks']) { $this->html('catlinks'); } ?>
-		<!-- end content -->
-		<?php if($this->data['dataAfterContent']) { $this->html ('dataAfterContent'); } ?>
-		<div class="visualClear"></div>
-	</div>
-</div></div>
 <div class="visualClear"></div>
 <div id="footer"<?php $this->html('userlangattributes') ?>>
 <?php

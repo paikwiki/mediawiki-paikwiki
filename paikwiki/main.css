@@ -1,21 +1,8 @@
 /*
-** MediaWiki 'monobook' style sheet for CSS2-capable browsers.
-** Copyright Gabriel Wicke - http://wikidev.net/
-** License: GPL (http://www.gnu.org/copyleft/gpl.html)
-**
-** Loosely based on http://www.positioniseverything.net/ordered-floats.html by Big John
-** and the Plone 2.0 styles, see http://plone.org/ (Alexander Limi,Joe Geldart & Tom Croucher,
-** Michael Zeltner and Geir Bækholt)
-** All you guys rock :)
-*/
-
-/*
-** Paikwiki is based on one of the most popular skin, MonoBook nouveau.
-** 파이킈키 스킨은 인기있는 스킨 중 하나인 모노북 누보 스킨을 기반으로 합니다.
+** Paikwiki is based on one of the most popular skin, MonoBook nouveau(Copyright Gabriel Wicke - http://wikidev.net/).
 ** MediaWiki 'paikwiki' style sheet for CSS2-capable browsers.
 ** Copyright chPaik - http://paikwiki.com/
 ** License: GPL (http://www.gnu.org/copyleft/gpl.html)
-** GNU라이센스와 원저작자 표기에 대한 지식이 부족한 탓에 문제 발생을 미연에 방지하고자 위의 주석을 그대로 남겨두었습니다.
 */
 
 #column-content {

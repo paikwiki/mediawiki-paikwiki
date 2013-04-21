@@ -5,12 +5,13 @@ MediaWiki 'paikwiki' style sheet for CSS2-capable browsers.
 Copyright chPaik - http://paikwiki.com/
 License: GPL (http://www.gnu.org/copyleft/gpl.html)
 
-/* notice
+notice
+======
  * Cause' I have some language problem, some part of this document has written by my native language, Korean.
  * But it doesn't have any important contents.
  * You can use paikwiki skin freely.
  * Enjoy it! 
-*/
+
 
 개 요 
 =====

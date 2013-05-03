@@ -657,7 +657,7 @@ table.rimage {
 #p-logo {
 	top: 0;
 	left: 0;
-	position:fixed;
+	position:absolute;
 	z-index: 4;
 	height: 80px;
 	width: 152px;
@@ -684,7 +684,7 @@ table.rimage {
 	width: 260px;
 	margin: 0;
 	padding: 4px 0 0 0;
-	position: fixed;
+	position: absolute;
 	float: right;
 	top: 48px;
 	right: 0;
@@ -729,7 +729,7 @@ input.searchButton {
 	white-space: nowrap;
 	padding: 0;
 	margin: 0;
-	position:fixed;
+	position:absolute;
 	top: 0;
 	left: 0;
 	z-index: 4;
@@ -811,7 +811,7 @@ li#pt-login {
 	margin: 0 0 0 -16px;
 	padding: 0;
 
-	position: fixed;
+	position: absolute;
 	top: 52px;	
 	z-index: 5;
 
@@ -927,7 +927,7 @@ div.generated-sidebar {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	position: fixed;
+	position: absolute;
 	top: 80px;
 	left: 0px;
 	background: #fff;
@@ -1377,7 +1377,7 @@ del {
 @media all and (max-device-width: 1023px) {
 	body { font-size:160%;}
 	#p-cactions {
-		position: fixed;
+		position: absolute;
 		top: 44px;	
 		font-size: 80%;
 	}

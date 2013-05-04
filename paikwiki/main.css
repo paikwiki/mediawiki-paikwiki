@@ -8,14 +8,15 @@
 
 /* 
 ** 1. 색상 참고표 Color List
-**	main Color (menu bar) : #09C
+**	아래의 색상코드를 바꾸면 스킨 전체의 색상 분위기를 바꿀 수 있습니다.
+**	main Color (haeder, footer, link) : #09C
 **	a.external : #994c00
 ** 
-** 2. 아이콘
-**	kinds of "external.png" 종류 
-**		external.png / external_blue.png / external_brown.png / external_gray.png 
-**	kinds of "lock_icon.gif" 종류
-** 		lock_icon.gif / lock_icon_blue.gif / lock_icon_brown.gif / lock_icon_gray.gif
+** 2. 아이콘 세트 Icon Set
+**	파일명을 수정하면 링크 옆의 아이콘 색상을 변경할 수 있습니다.
+**	external_blue.png / external_brown.png / external_gray.png 
+**	external-rtl_blue.png / external-rtl_brown.png / external-rtl_gray.png
+** 	lock_icon_blue.gif / lock_icon_brown.gif / lock_icon_gray.gif
 */
 
 #column-content {
@@ -513,16 +514,16 @@ table.rimage {
 */
 #bodyContent a.external,
 #bodyContent a.external[href ^="gopher://"] {
-	background: url(external.png) center right no-repeat;
+	background: url(external_brown.png) center right no-repeat;
 	padding: 0 13px;
 }
 .rtl #bodyContent a.external,
 .rtl #bodyContent a.external[href ^="gopher://"] {
-	background-image: url(external-rtl.png);
+	background-image: url(external-rtl_brown.png);
 }
 #bodyContent a.external[href ^="https://"],
 .link-https {
-	background: url(lock_icon.gif) center right no-repeat;
+	background: url(lock_icon_brown.gif) center right no-repeat;
 	padding: 0 16px;
 }
 #bodyContent a.external[href ^="mailto:"],

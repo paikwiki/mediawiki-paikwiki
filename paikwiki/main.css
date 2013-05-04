@@ -824,11 +824,12 @@ li#pt-login {
 ** the page-related actions- page/talk, edit etc
 */
 #p-cactions {
-	margin: 0 0 0 -16px;
+	max-width: 1200px;
+	min-width: 800px;
+	margin-left: -24px;
 	padding: 0;
 	position: absolute;
 	top: 61px;
-	left: 68px;
 	z-index: 5;
 	white-space: nowrap;
 	overflow: visible;
@@ -939,21 +940,21 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 }
 
 /* generated-sidebar setting */
+
+
 div.generated-sidebar {	
-	width: 640px;
-	height: 20px;
-	margin: 0;
+	max-width: 1200px;
+	min-width: 800px;
+	margin-left: -24px;
 	padding: 0;
 	position: absolute;
 	top: 36px;
-	left: 160px;
 	z-index: 6;
 	background: none;
 }
 
 div.generated-sidebar .pBody {
 	border: 0;
-	border-bottom: 1px solid #09c;
 }
 
 div.generated-sidebar .pBody ul{
@@ -963,7 +964,7 @@ div.generated-sidebar .pBody ul{
 
 div.generated-sidebar .pBody ul li {
 	margin: 0;
-	margin-right: 4px;
+	margin-right: 2px;
 	padding: 2px 4px;
 	background: #eee;
 	-moz-border-radius:4px;
@@ -1410,10 +1411,48 @@ del {
 /* =======================================
  * 여기서부터는 모바일 디바이스를 위한 설정입니다. 
 ======================================= */
-@media all and (max-device-width: 1023px) {
 
+@media all and (max-width: 1492px) {
+	div.generated-sidebar {	
+		margin-left: 68px;
+		width: 640px;
+	}
+	#p-CATEGORY_CLOUD {
+		margin-left: 0px;
+	}
+	#p-cactions {
+		margin-left: 60px;
+		width: 740px;
+	}
 }
 
+@media all and (max-width: 1370px) {
+	div.generated-sidebar {	
+		margin-left: 108px;
+		width: 640px;
+	}
+	#p-CATEGORY_CLOUD {
+		margin-left: 0px;
+	}
+	#p-cactions {
+		margin-left: 100px;
+		width: 740px;
+	}
+}
+
+@media all and (max-width: 1290px) {
+	div.generated-sidebar {	
+		margin-left: 128px;
+		width: 640px;
+	}
+	#p-CATEGORY_CLOUD {
+		margin-left: 0px;
+	}
+	#p-cactions {
+		margin-left: 120px;
+		width: 740px;
+	}
+}
 /* =======================================
  * 여기서부터는 paikwiki.com을 위한 설정입니다. 
  * 다른 위키에서 이 스킨을 사용할 경우 지워도 되는 부분입니다.
@@ -1428,6 +1467,8 @@ body.page-대문 h1.firstHeading {
   display: none !important;
 }
 #p-CATEGORY_CLOUD {
+	width: 100%;
+	height: 56px;
 	position: static;
 	top: none;
 	left: none;

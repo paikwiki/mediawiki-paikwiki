@@ -63,7 +63,7 @@
 */
 
 body {
-	font: sans-serif;
+	font-family: "맑은고딕", "나눔고딕", "돋움", sans-serif;
 	font-size: 10pt;
 	background-color: #fafafa;
 	margin: 0;
@@ -136,7 +136,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
 	color: black;
 	background: none;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0;
 	padding-top: .5em;
 	padding-bottom: .17em;
@@ -145,18 +145,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .editsection { display: inline; }
 
-h1 { font-size: 132%;  color: #036;}
+h1 {
+	font-size: 200%; 
+	color: #036;
+	border: 0;
+}
 h1 .editsection { font-size: 53%; }
-h2 { font-size: 124%; color: #036; font-weight: bold; margin-top: 36px;}
+h2 { font-size: 160%; color: #036; margin-top: 36px;}
 h2 .editsection { font-size: 67%; }
 h3, h4, h5, h6 {
 	color: #036;
 	border-bottom: none;
 	font-weight: bold;
 }
-h3 { font-size: 116%; text-indent: 8px; border-bottom: 1px dotted #ddd; }
+h3 { font-size: 132%; text-indent: 8px; border-bottom: 1px dotted #ddd; }
 h3 .editsection { font-size: 76%; font-weight: normal; }
-h4 { font-size: 100%;  text-indent: 16px;}
+h4 { font-size: 120%;  text-indent: 16px;}
 h4 .editsection { font-size: 86%; font-weight: normal; }
 h5 { font-size: 100%; }
 h5 .editsection { font-weight: normal; }
@@ -176,8 +180,8 @@ ul {
 	list-style-image: url(bullet.gif);
 }
 ol {
-	line-height: 1.5em;
-	margin: .3em 0 0 3.2em;
+	line-height: 1.3em;
+	margin: .3em 0 0 36px;
 	padding: 0;
 	list-style-image: none;
 }
@@ -251,8 +255,8 @@ code {
 	background-color: #f9f9f9;
 }
 pre {
-	padding: 1em;
-	border: 1px dashed #2f6fab;
+	padding: 8px;
+	border: none;
 	color: black;
 	background-color: #f9f9f9;
 	line-height: 1.2em;
@@ -1477,4 +1481,10 @@ body.page-대문 h1.firstHeading {
 
 #p-CATEGORY_CLOUD .pBody {
 	border: 0;
+}
+
+/* 구문강조 확장팩 Geshi 의 5배수 라인 강조구문 수정 */
+.code li.li2 {
+	font-weight: normal !important;
+	color: red;
 }
